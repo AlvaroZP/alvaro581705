@@ -14,7 +14,7 @@ header
     background: #202020;
     color: white;
     padding: 0.5em;
-    overflow: hidden
+    overflow: hidden;
 }
 header figure
 {
@@ -42,16 +42,117 @@ header #avatar
 header h1
 {
     font-size: 1.2em;
-    font-weight: normal
+    font-weight: normal;
 }
 nav /*menu*/
 {
     background: #64BCB8;
     padding: 0 0.5em;
-    box-shadow: rgba(0,0,0,0.5) 2px 2px 5px;    
+    box-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+    position: relative;
 }
 nav ul
 {
     list-style: none;
     margin: 0 20px 0 0;
+}
+nav ul li
+{
+    display: inline-block;
+    margin: 0 1em 0 0;
+}
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 0;
+    display: block;
+}
+nav ul #Publicar
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+nav ul #Publicar a
+{
+    background: #26766b;
+    text-decoration: none;
+    border-radius: 5px;
+    padding; 0.3em 0.3em;
+    box-shadow: rgba(0, 0, 0, 1) 0px 4px 15px;
+    text-shadow: rgba(0, 0, 0, 1) 0px 4px 10px;
+}
+#contenido
+{
+    margin: 1em;
+}
+#contenido .item
+{
+    background: white;
+    margin-bottom: 2em;
+    border-bottom: 3px solid #2e7476;
+    min-height: 150px;
+    position: relative;
+}
+#contenido .item .img_item img
+{
+    width: 85px;
+}
+#contenido .item .img_item
+{
+    float: left;
+    margin: 0 20px 0 0;
+}
+#contenido .item .titulo_item
+{
+    font-size: 1.2em;
+    font-style: italic;
+    padding: 1em 1em 0 0;
+}
+#contenido .item .datosautor_item
+{
+    color: #aaa;
+    margin-top: 0.5em
+}
+#contenido .item .info_item
+{
+    margin: 1em 1em 0 0;
+    text-align: right;
+}
+#contenido .item .info_item .fecha_item
+{
+    color: #aaa;
+}
+#contenido .item .info_item .tag_item
+{
+    background: #ea6963;
+    border-radius: 0.5em;
+    color: white;
+    padding: 0.2em 0.5em;
+    text-decoration: none;
+    float: left;
+    display: inline-block;
+}
+#contenido .item .votacion_item
+{
+    background: white;
+    border-radius: 0 0 0.5em 0.5em;
+    width: 95%;
+    padding: 0.2em 0.5em;
+    margin-top: 3px;
+    position: absolute;
+    top: 100%;
+    left: 1%;
+}
+#contenido .item .votacion_item .comentario_item
+{
+    float: right;
+}
+footer
+{
+    background: #63bcb8;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 0.2em;
 }
